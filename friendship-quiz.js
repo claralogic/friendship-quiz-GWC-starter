@@ -16,7 +16,7 @@ var answerList = []; //initialize answerList to be empty
 
 //adds user-submitted answer to answerList
 function submitAnswer() {
-  var answer = document.getElementByID("answerImput").value;
+  var answer = document.getElementById("answerImput").value;
   answerList.push(answer);
   console.log(answer)
  window.alert("submitted")
@@ -26,7 +26,7 @@ function submitAnswer() {
 //checks if user-submitted guess is in answerList
 function checkGuess() {
 
-  var guess = document.getElementByID("guessImput").value;
+  var guess = document.getElementById("guessImput").value;
   answerList.push(guess);
   console.log(guess)
   var x = answerList.length;
