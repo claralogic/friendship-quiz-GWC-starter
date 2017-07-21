@@ -11,35 +11,25 @@ function init() {
 window.onload = init;
 
 var answerList = []; //initialize answerList to be empty
-
+var guessList = [];
 /* ADD YOUR CODE BELOW */
 
 //adds user-submitted answer to answerList
 function submitAnswer() {
-  var answer = document.getElementById("answerImput").value;
+  var answer = document.getElementById("answerInput").value;
   answerList.push(answer);
-  console.log(answer)
- window.alert("submitted")
-
+  console.log(answer);
+ window.alert("submitted");
 }
 
 //checks if user-submitted guess is in answerList
 function checkGuess() {
-
-  var guess = document.getElementById("guessImput").value;
-  answerList.push(guess);
+  var guess = document.getElementById("guessInput").value;
+  guessList.push(guess);
   console.log(guess)
-  var x = answerList.length;
-  for(var i = 0; i < x; i++){
-    if(guesslist[i] == answerList[i]){
-      console.log("correct");
-        window.alert("correct")
-  
-  
-  
-  
-  //var guess = document.getElementByID("aguessImput").value;
-  //answerList.push(guess);
-  //console.log(guess)
- //window.alert("submitted")
+  for(var i = 0; i<answerList.length;i++){
+    if (answerList[i] == guess){
+    window.alert("that was amazeballs!")
+    }
+  }
 }
