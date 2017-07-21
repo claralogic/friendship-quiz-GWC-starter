@@ -25,8 +25,21 @@ function submitAnswer() {
 
 //checks if user-submitted guess is in answerList
 function checkGuess() {
-var guess = document.getElementByID("aguessImput").value;
+
+  var guess = document.getElementByID("guessImput").value;
   answerList.push(guess);
   console.log(guess)
- window.alert("submitted")
+  var x = answerList.length;
+  for(var i = 0; i < x; i++){
+    if(guesslist[i] == answerList[i]){
+      console.log("correct");
+        window.alert("correct")
+  
+  
+  
+  
+  //var guess = document.getElementByID("aguessImput").value;
+  //answerList.push(guess);
+  //console.log(guess)
+ //window.alert("submitted")
 }
